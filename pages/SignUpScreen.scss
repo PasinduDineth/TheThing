@@ -1,0 +1,41 @@
+.container {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    width: 120px;
+    height: 120px;
+    resize-mode: contain;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 30px;
+  }
+  
+  .footer {
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  
+  .footerText {
+    color: #666;
+  }
+  
+  .loginLink {
+    color: #3b82f6;
+    font-weight: 600;
+  }
+  
