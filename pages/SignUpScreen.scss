@@ -1,41 +1,56 @@
+.scrollContainer {
+  flex-grow: 1;
+  justify-content: center;
+  background-color: #f1d8fd;
+}
+
 .container {
-    flex: 1;
-    padding: 20px;
-    background-color: #ffffff;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .logo {
-    width: 120px;
-    height: 120px;
-    resize-mode: contain;
-    margin-bottom: 20px;
-  }
-  
-  .title {
-    font-size: 26px;
-    font-weight: bold;
-    color: #222;
-  }
-  
-  .subtitle {
-    font-size: 16px;
-    color: #888;
-    margin-bottom: 30px;
-  }
-  
-  .footer {
-    flex-direction: row;
-    margin-top: 20px;
-  }
-  
-  .footerText {
-    color: #666;
-  }
-  
-  .loginLink {
-    color: #3b82f6;
-    font-weight: 600;
-  }
-  
+  padding: 30px 24px;
+  align-items: center;
+}
+
+.logoWrapper {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #eef2ff;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  resize-mode: contain;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 28px;
+}
+
+.footer {
+  flex-direction: row;
+  margin-top: 24px;
+  justify-content: center;
+}
+
+.footerText {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.loginLink {
+  font-size: 14px;
+  color: #3b82f6;
+  font-weight: 600;
+}
