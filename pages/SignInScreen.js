@@ -3,7 +3,7 @@ import { View, Text, Image, TouchableOpacity, ScrollView, StyleSheet } from 'rea
 import InputField from '../components/InputField';
 import PrimaryButton from '../components/PrimaryButton';
 
-const SignUpScreen = () => {
+const SignInScreen = () => {
   return (
     <ScrollView contentContainerStyle={styles.scrollContainer}>
       <View style={styles.container}>
@@ -12,18 +12,17 @@ const SignUpScreen = () => {
         </View>
 
         <Text style={styles.title}>The Thing</Text>
-        <Text style={styles.subtitle}>Sign up an account</Text>
+        <Text style={styles.subtitle}>Sign in to your account</Text>
 
         <InputField placeholder="Email Address" icon="mail" keyboardType="email-address" />
         <InputField placeholder="Password" icon="lock" secureTextEntry />
-        <InputField placeholder="Confirm Passowrd" icon="lock" secureTextEntry />
 
-        <PrimaryButton text="Sign Up" onPress={() => {}} />
+        <PrimaryButton text="Sign In" onPress={() => {}} />
 
         <View style={styles.footer}>
-          <Text style={styles.footerText}>Already have an account?</Text>
+          <Text style={styles.footerText}>Don't have an account?</Text>
           <TouchableOpacity>
-            <Text style={styles.loginLink}> Sign In</Text>
+            <Text style={styles.loginLink}> Sign Up</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -60,6 +59,7 @@ const styles = StyleSheet.create({
     fontWeight: '900',
     color: '#1f2937',
     marginBottom: 6,
+    fontFamily: 'OpenSansBold'
   },
   subtitle: {
     fontSize: 16,
@@ -82,4 +82,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SignUpScreen;
+export default SignInScreen;
