@@ -59,12 +59,13 @@ const styles = StyleSheet.create({
     fontWeight: '900',
     color: '#1f2937',
     marginBottom: 6,
-    fontFamily: 'OpenSansBold'
+    fontFamily: 'serif'
   },
   subtitle: {
     fontSize: 16,
     color: '#6b7280',
     marginBottom: 28,
+    fontFamily: 'serif'
   },
   footer: {
     flexDirection: 'row',
@@ -74,11 +75,13 @@ const styles = StyleSheet.create({
   footerText: {
     fontSize: 14,
     color: '#6b7280',
+    fontFamily: 'serif'
   },
   loginLink: {
     fontSize: 14,
     color: '#1f2937',
     fontWeight: '600',
+    fontFamily: 'serif'
   },
 });
 

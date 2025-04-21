@@ -42,6 +42,7 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: 16,
     color: '#1f2937',
+    fontFamily: 'serif'
   },
 });
 
