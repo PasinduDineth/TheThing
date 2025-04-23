@@ -11,6 +11,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-community/slider": "^4.5.6",
     "missing-asset-registry-path": "^0.0.0",
     "react": "19.0.0",
     "react-native": "0.79.1",

@@ -30,7 +30,6 @@ const styles = StyleSheet.create({
     shadowColor: '#000',
     shadowOpacity: 0.05,
     shadowRadius: 4,
-    elevation: 1,
   },
   icon: {
     width: 20,
