@@ -45,3 +45,13 @@ export const updateProfile = async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 };
+
+export const getAllProfiles = async (req, res) => {
+  const { data, error } = await supabase.from('profiles').select('*');
+
+  if (error) {
+    return res.status(500).json({ error: error.message });
+  }
+
+  res.json(data);
+};
