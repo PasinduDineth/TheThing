@@ -2,7 +2,7 @@
 import supabase from '../config/supabaseClient.js';
 
 // Function to get user profile
-export const getProfile = async (req, res) => {
+export const getUser = async (req, res) => {
   const userId = req.params.id; // Get the user ID from the request
   try {
     const { data, error } = await supabase
