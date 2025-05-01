@@ -18,11 +18,14 @@ comment on column public.users.id is 'References the internal Supabase Auth user
 comment on column public.users.partner_id is 'Links to another user ID in this table to represent their partner.';
 
 -- Automatically insert new users into the public.users table
-create or replace function public.handle_new_user() 
+create or replace function public.handle_new_user()
 returns trigger as $$
 begin
-  insert into public.users (id, email)
-  values (new.id, new.email);
+  insert into public.users (id, email, connectcode)
+  values (
+    new.id,
+    new.email,
+    (new.raw_user_meta_data::jsonb->>'connectcode'));
   return new;
 end;
 $$ language plpgsql security definer;
@@ -30,3 +33,6 @@ $$ language plpgsql security definer;
 create trigger on_auth_user_created
   after insert on auth.users
   for each row execute procedure public.handle_new_user();
+
+  ------------------------------------------------------
+  DROP FUNCTION handle_new_user() CASCADE;
